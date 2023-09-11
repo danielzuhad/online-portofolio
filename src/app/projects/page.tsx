@@ -11,15 +11,22 @@ export default function Projects() {
         </h1>
         <div className="flex gap-10 sm:flex-col lg:flex-row">
           <Card
-            href="https://github.com/danielzuhad/bakatlacak-client"
+            github="https://github.com/danielzuhad/bakatlacak-client"
             title="Job Seeker Web Aplication"
             description="Membuat aplikasi job seeker yang dilakukan secara berkelompok yang bernama 'bakat lacak'. Menggunakan bahasa teknologi seperti React, Vite, Chakra Ui, Tailwind dan Express "
           />
 
           <Card
-            href="https://github.com/danielzuhad/little-ecommerce-client"
+            github="https://github.com/danielzuhad/little-ecommerce-client"
             title="Little E-commerce"
-            description="Membuat aplikasi seperti e-commerce dengan menggunakan Next Typescript, dengan Backend menggunakan Express JS dan menggunakan state management Zustand"
+            description="Aplikasi yang dapat menambahkan produk ke cart dan dapat membuat transaction detail dengan menggunakan Next Typescript, dengan Backend menggunakan Express JS dan menggunakan state management Zustand"
+          />
+
+          <Card
+            github="https://github.com/danielzuhad/todo-list-next-ts"
+            link="https://todo-list-next-ts.vercel.app/"
+            title="Todo List"
+            description="Aplikasi yang dapat membuat, mengedit dan menghapus suatu tugas, dibuat dengan Fullstack Next Typescript dengan ORM Prisma"
           />
         </div>
       </div>
