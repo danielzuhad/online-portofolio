@@ -3,6 +3,35 @@ import React from "react";
 import { PageWrapper } from "../page-wrapper";
 
 export default function Projects() {
+  const projects = [
+    {
+      github: "https://github.com/danielzuhad/bakatlacak-client",
+      title: "Job Seeker Web Aplication",
+      description:
+        "Membuat aplikasi job seeker yang dilakukan secara berkelompok yang bernama 'bakat lacak'. Menggunakan bahasa teknologi seperti React, Vite, Chakra Ui, Tailwind dan Express ",
+    },
+    {
+      github: "https://github.com/danielzuhad/little-ecommerce-client",
+      title: "Job Seeker Web Aplication",
+      description:
+        "Aplikasi yang dapat menambahkan produk ke cart dan dapat membuat transaction detail dengan menggunakan Next Typescript, dengan Backend menggunakan Express JS dan menggunakan state management Zustand",
+    },
+    {
+      github: "https://github.com/danielzuhad/todo-list-next-ts",
+      title: "Todo List",
+      description:
+        "Aplikasi yang dapat membuat, mengedit dan menghapus suatu tugas, dibuat dengan Fullstack Next Typescript dengan ORM Prisma",
+      link: "https://todo-list-next-ts.vercel.app/",
+    },
+    {
+      github: "https://github.com/danielzuhad/penuh-makna",
+      title: "Cafe Landing Page (Internship Project)",
+      description:
+        "Aplikasi landing page untuk cafe menggunakan next js, tailwind dan Daisy UI untuk feature dark mode",
+      link: "https://penuh-makna.vercel.app/",
+    },
+  ];
+
   return (
     <PageWrapper>
       <div className="w-[70vw] min-h-screen flex justify-center items-center gap-10 flex-col ">
@@ -10,24 +39,15 @@ export default function Projects() {
           Projects
         </h1>
         <div className="flex gap-10 sm:flex-col lg:flex-row">
-          <Card
-            github="https://github.com/danielzuhad/bakatlacak-client"
-            title="Job Seeker Web Aplication"
-            description="Membuat aplikasi job seeker yang dilakukan secara berkelompok yang bernama 'bakat lacak'. Menggunakan bahasa teknologi seperti React, Vite, Chakra Ui, Tailwind dan Express "
-          />
-
-          <Card
-            github="https://github.com/danielzuhad/little-ecommerce-client"
-            title="Little E-commerce"
-            description="Aplikasi yang dapat menambahkan produk ke cart dan dapat membuat transaction detail dengan menggunakan Next Typescript, dengan Backend menggunakan Express JS dan menggunakan state management Zustand"
-          />
-
-          <Card
-            github="https://github.com/danielzuhad/todo-list-next-ts"
-            link="https://todo-list-next-ts.vercel.app/"
-            title="Todo List"
-            description="Aplikasi yang dapat membuat, mengedit dan menghapus suatu tugas, dibuat dengan Fullstack Next Typescript dengan ORM Prisma"
-          />
+          {projects.map((project, i) => (
+            <Card
+              key={i}
+              github={project.github}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+            />
+          ))}
         </div>
       </div>
     </PageWrapper>
