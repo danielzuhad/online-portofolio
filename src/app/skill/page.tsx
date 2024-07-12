@@ -33,7 +33,7 @@ export default function Skill() {
             <motion.div
               key={i}
               whileHover={{ y: -30 }}
-              className="flex flex-col items-center gap-2"
+              className="flex flex-col items-center gap-2 hover:cursor-pointer"
             >
               {skill.icon}
               <span>{skill.title}</span>
