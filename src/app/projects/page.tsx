@@ -34,6 +34,14 @@ export default function Projects() {
       // "Aplikasi landing page untuk cafe menggunakan next js, tailwind dan Daisy UI untuk feature dark mode",
       link: "https://spotify-clone-k7.vercel.app/",
     },
+    {
+      github: "https://github.com/danielzuhad/Chat-App-Next",
+      title: "Chat App",
+      description:
+        "Aplication Chatting, made with next js, tailwind, next-auth, reduxjs toolkit, and react query",
+      // "Aplikasi landing page untuk cafe menggunakan next js, tailwind dan Daisy UI untuk feature dark mode",
+      link: "https://chat-app-next-murex.vercel.app/",
+    },
   ];
 
   return (
@@ -42,7 +50,7 @@ export default function Projects() {
         <h1 className="text-white font-semibold sm:text-[2em] text-[3.5em] mt-[5em] ">
           Projects
         </h1>
-        <div className="w-full flex flex-wrap items-center justify-center gap-10 sm:flex-col lg:flex-row pb-10">
+        <div className="flex flex-wrap items-center justify-center w-full gap-10 pb-10 sm:flex-col lg:flex-row">
           {projects.map((project, i) => (
             <Card
               key={i}
